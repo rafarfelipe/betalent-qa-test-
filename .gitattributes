@@ -1,5 +1,11 @@
+# Ensure JS files are recognized as JavaScript
 *.js linguist-language=JavaScript
-*.json linguist-language=JavaScript
+
+# JSON files are typically JSON, not JavaScript
+*.json linguist-language=JSON
+
+# Markdown files
 *.md linguist-language=Markdown
-*.png linguist-documentation
+
+# Images and other assets - often marked as vendored or documentation
 *.png linguist-vendored
