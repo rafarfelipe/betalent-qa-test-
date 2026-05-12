@@ -1,0 +1,108 @@
+{
+  "title": "Restful-Booker API Test Report",
+  "baseUrl": "https://restful-booker.herokuapp.com",
+  "apiDocumentation": "https://restful-booker.herokuapp.com/apidoc/index.html",
+  "timestamp": "2026-05-12T15:03:25.757Z",
+  "totalTests": 16,
+  "passedTests": 14,
+  "failedTests": 2,
+  "passRate": "87.50%",
+  "results": [
+    {
+      "name": "TC-API-AUTH-001 | Deve obter token de autenticação",
+      "passed": true,
+      "details": "Status: 200, Token: obtained",
+      "timestamp": "2026-05-12T15:03:23.770Z"
+    },
+    {
+      "name": "TC-API-CRUD-001 | Deve criar reserva",
+      "passed": 765,
+      "details": "Status: 200, Booking ID: 765",
+      "timestamp": "2026-05-12T15:03:23.904Z"
+    },
+    {
+      "name": "TC-API-CRUD-002 | Deve obter todas as reservas",
+      "passed": true,
+      "details": "Status: 200, Count: 537",
+      "timestamp": "2026-05-12T15:03:24.037Z"
+    },
+    {
+      "name": "TC-API-CRUD-003 | Deve obter reserva por ID",
+      "passed": "John",
+      "details": "Status: 200, Name: John Doe",
+      "timestamp": "2026-05-12T15:03:24.169Z"
+    },
+    {
+      "name": "TC-API-SEC-001 | Deve bloquear atualização de reserva não autenticada",
+      "passed": true,
+      "details": "Status: 403",
+      "timestamp": "2026-05-12T15:03:24.302Z"
+    },
+    {
+      "name": "TC-API-CRUD-004 | Deve atualizar reserva",
+      "passed": true,
+      "details": "Status: 200, Updated name: Jane",
+      "timestamp": "2026-05-12T15:03:24.434Z"
+    },
+    {
+      "name": "TC-API-CRUD-005 | Deve atualizar reserva parcialmente",
+      "passed": true,
+      "details": "Status: 200",
+      "timestamp": "2026-05-12T15:03:24.567Z"
+    },
+    {
+      "name": "TC-API-CRUD-006 | Deve excluir reserva",
+      "passed": true,
+      "details": "Status: 201",
+      "timestamp": "2026-05-12T15:03:24.699Z"
+    },
+    {
+      "name": "TC-API-VALID-001 | Deve validar primeiro nome obrigatório",
+      "passed": true,
+      "details": "Status: 500",
+      "timestamp": "2026-05-12T15:03:24.832Z"
+    },
+    {
+      "name": "TC-API-VALID-002 | Deve validar formato do preço",
+      "passed": false,
+      "details": "Status: 200",
+      "timestamp": "2026-05-12T15:03:24.964Z"
+    },
+    {
+      "name": "TC-API-VALID-003 | Deve validar formato de data",
+      "passed": false,
+      "details": "Status: 200",
+      "timestamp": "2026-05-12T15:03:25.096Z"
+    },
+    {
+      "name": "TC-API-FILTER-001 | Deve filtrar reservas por nome",
+      "passed": true,
+      "details": "Status: 200, Results: 0",
+      "timestamp": "2026-05-12T15:03:25.228Z"
+    },
+    {
+      "name": "TC-API-FILTER-002 | Deve filtrar reservas por intervalo de datas",
+      "passed": true,
+      "details": "Status: 200, Results: 2",
+      "timestamp": "2026-05-12T15:03:25.361Z"
+    },
+    {
+      "name": "TC-API-FILTER-003 | Deve suportar paginação",
+      "passed": true,
+      "details": "Status: 200, Results: 551",
+      "timestamp": "2026-05-12T15:03:25.493Z"
+    },
+    {
+      "name": "TC-API-HEALTH-001 | Deve retornar status de API saudável",
+      "passed": true,
+      "details": "Status: 201",
+      "timestamp": "2026-05-12T15:03:25.625Z"
+    },
+    {
+      "name": "TC-API-PERF-001 | Deve responder ao health check em menos de 2 segundos",
+      "passed": true,
+      "details": "Status: 201, Response time: 131ms",
+      "timestamp": "2026-05-12T15:03:25.756Z"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "betalent-qa-test",
+  "version": "1.0.0",
+  "description": "Testes de UI e API - BeTalent QA",
+  "main": "index.js",
+  "scripts": {
+    "test:ui": "playwright test ui-testing/testes",
+    "test:ui:debug": "playwright test ui-testing/testes --debug",
+    "test:ui:headed": "playwright test ui-testing/testes --headed",
+    "test:ui:chrome": "playwright test ui-testing/testes --project=chromium",
+    "test:api": "node api-testing/tests/runner.js",
+    "test:all": "npm run test:ui && npm run test:api",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "testing",
+    "qa",
+    "playwright",
+    "api-testing"
+  ],
+  "author": "Rafael Felipe",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  }
+}
